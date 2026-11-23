@@ -13,6 +13,8 @@
 | M5 工时切段 | 查看并复算工时切段 | `/api/m5_calculate` | `app/modules/m5_calculate/rules.py` | `tests/test_calculate.py` |
 | M6 薪资对账 | 查看并复算薪资对账 | `/api/m6_reconcile` | `app/modules/m6_reconcile/compare.py` | `tests/test_reconcile.py` |
 | M7 周期归档 | 查看并复算周期归档 | `/api/m7_archive` | `app/modules/m7_archive/export_out.py` | `tests/test_archive.py` |
+| M8 加班预支 | 按已发生片段生成/复用预支单 | `/api/m8_advance`、`/api/advances` | `app/modules/m8_advance/rules.py`、`app/advance_store.py` | `tests/test_advance_settlement.py` |
+| M9 预支结清 | 逐项对应结清、版本化、封存导出 | `/api/m9_settlement`、`/api/settlements` | `app/modules/m9_settlement/rules.py`、`app/advance_store.py` | `tests/test_advance_settlement.py` |
 
 ## 陷阱登记
 
